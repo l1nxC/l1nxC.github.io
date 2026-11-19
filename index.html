@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>l1nxC</title>
+
+<style>
+  :root{
+    --bg:#f6f7f9;
+    --card:#ffffff;
+    --text:#1f2328;
+    --muted:#5b6470;
+    --line:#e3e6ea;
+    --accent:#2f6feb;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0f1115;
+      --card:#171a21;
+      --text:#e8eaed;
+      --muted:#9aa4b2;
+      --line:#262b34;
+      --accent:#6ea8ff;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px 20px;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{
+    width:100%;
+    max-width:660px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:44px 40px;
+  }
+  h1{
+    font-size:26px;
+    line-height:1.3;
+    margin:0 0 6px;
+    letter-spacing:.3px;
+  }
+  .sub{
+    color:var(--muted);
+    font-size:14px;
+    margin:0 0 28px;
+  }
+  hr{
+    border:0;
+    border-top:1px solid var(--line);
+    margin:0 0 28px;
+  }
+  h2{
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:28px 0 10px;
+  }
+  h2:first-of-type{margin-top:0}
+  p{margin:0 0 12px}
+  ul{
+    margin:0;
+    padding-left:20px;
+  }
+  li{margin:0 0 6px}
+  .tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:4px;
+  }
+  .tag{
+    font-size:13px;
+    color:var(--muted);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:3px 12px;
+  }
+  a{
+    color:var(--accent);
+    text-decoration:none;
+    word-break:break-all;
+  }
+  a:hover{text-decoration:underline}
+  footer{
+    margin-top:34px;
+    padding-top:18px;
+    border-top:1px solid var(--line);
+    color:var(--muted);
+    font-size:13px;
+  }
+  @media (max-width:520px){
+    main{padding:32px 22px;border-radius:0;border:0}
+    body{padding:0;background:var(--card)}
+    h1{font-size:23px}
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>l1nxC</h1>
+  <p class="sub">个人学习与资料整理</p>
+  <hr>
+
+  <h2>简介</h2>
+  <p>本页用于记录个人学习过程中的笔记、资料与解题整理。日常会阅读教材与技术文档，并对练习中的推导过程做归纳和复盘。</p>
+
+  <h2>关注方向</h2>
+  <div class="tags">
+    <span class="tag">学习笔记</span>
+    <span class="tag">资料整理</span>
+    <span class="tag">解题记录</span>
+  </div>
+
+  <h2>联系方式</h2>
+  <p>联系方式：可通过本页所在仓库的 Issues 留言</p>
+
+  <footer>
+    本页为个人用途的简单主页，用于说明使用场景。
+  </footer>
+</main>
+</body>
+</html>
